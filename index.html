@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #container {
+      border: 5px solid blue;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    #title {
+      color: yellow;
+      font-weight: bold;
+      animation: titleAnimation 1s infinite;
+    }
+
+    #photo1 {
+      animation: growAndLight 2s infinite;
+    }
+
+    #welcome {
+      color: red;
+      font-weight: bold;
+      animation: welcomeAnimation 1s;
+    }
+
+    #introText {
+      color: white;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    #ourChannel {
+      font-size: 2em;
+      color: white;
+      animation: textAnimation 1s infinite;
+    }
+
+    #clickHere {
+      color: white;
+      font-size: 1.5em;
+      border: 1px solid black;
+    }
+
+    @keyframes titleAnimation {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes growAndLight {
+      0% { transform: scale(1); filter: brightness(100%); }
+      50% { transform: scale(1.1); filter: brightness(120%); }
+      100% { transform: scale(1); filter: brightness(100%); }
+    }
+
+    @keyframes welcomeAnimation {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes textAnimation {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1 id="title">Vishal VHB</h1>
+    <img id="photo1" src="https://images.app.goo.gl/fq6smDvGiDGTaQKY9" alt="Vishal's Photo">
+    <img id="photo2" src="https://www.totalgaming.in/_next/static/media/top%20image.79e65ecb.svg" alt="Channel Photo">
+    <p id="welcome">Welcome</p>
+    <p id="introText">HELLO BHAI LOG KYA HAL CHAL SABHI KA MERA NAAM HAI VISHAL OR OR UMID KARTA HU AAPNE MERE YOUTUBE CHANNEL KO SUBSCRIBE KAR DIYA HOGA THANKYOU 🙏🏻</p>
+    <p id="ourChannel">OUR CHANNEL</p>
+    <a id="clickHere" href="https://youtube.com/@tgvishalvhb" target="_blank">CLICK HERE</a>
+  </div>
+</body>
+</html>
